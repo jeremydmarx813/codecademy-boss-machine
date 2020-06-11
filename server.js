@@ -16,6 +16,7 @@ app.use(cors());
 const bodyParser = require('body-parser');
 app.use(bodyParser.json());
 
+// app.use(express.static('/'))
 // Mount your existing apiRouter below at the '/api' path.
 const apiRouter = require('./server/api');
 app.use('/api', apiRouter);
