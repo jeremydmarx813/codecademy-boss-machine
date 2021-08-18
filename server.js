@@ -21,7 +21,7 @@ app.use(express.json());
 const apiRouter = require('./server/api');
 app.use('/api', apiRouter);
 
-app.use(express.static('/'))
+app.use('/public', express.static('public'))
 app.get('*', (req, res) => {
   res.sendFile(path.resolve('index.html'));
 })
