@@ -8,7 +8,7 @@
 	"main": "server.js",
 	"scripts": {
 		"start" : "node server.js",
-		"build": "webpack --mode production",
+		"build": "webpack",
 		"test": "cross-env PORT=8000 mocha --watch",
 		"start-dev": "webpack -w & nodemon --watch server.js --watch server/",
 		"start-server": "nodemon --watch server.js --watch server/",
