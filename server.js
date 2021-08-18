@@ -26,9 +26,9 @@ app.get('*', (req, res) => {
   res.sendFile(path.resolve('index.html'));
 })
 // This conditional is here for testing purposes:
-if (!module.parent) { 
-  // Add your code to start the server listening at PORT below:
-   app.listen(PORT, () => {
-     console.log(`Server listening on ${PORT}`);
-   });
-}
+// if (!module.parent) { 
+// }
+// Add your code to start the server listening at PORT below:
+app.listen(PORT, () => {
+  console.log(`Server listening on ${PORT}`);
+});
